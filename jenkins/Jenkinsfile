@@ -3,6 +3,9 @@ pipeline {
     options {
         skipStagesAfterUnstable()
     }
+    tools {
+        maven 'Maven 3.9.11'  // Use the exact name you gave it in step 4
+    }
     stages {
         stage('Build') {
             steps {
